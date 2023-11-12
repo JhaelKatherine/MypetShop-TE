@@ -23,19 +23,10 @@
   font-size: calc(10px + 2vmin);
   color: #E4EBF0;
 }
-.logo-img {
-  width: 70px;
-  height: 70px;
-}
+
 .App-link {
   color: #61dafb;
 }
-
-.blue-bar {
-  height: 90px;
-  background-color: rgba(36, 68, 85, 0.966)
-}
-
 
 @keyframes App-logo-spin {
   from {

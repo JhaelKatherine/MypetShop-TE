@@ -1,10 +1,12 @@
 import React from 'react';
 import '../Css/HomePage.css';
+import Header from './Header.js'; 
+import Footer from "./Footer.js";
 
 function HomePage() {
   return (
     <div className="HomePage">
-      {/* Botones superiores */}
+      <Header />
       <div className="top-buttons">
         <button>Dog</button>
         <button>Cat</button>
@@ -13,33 +15,56 @@ function HomePage() {
         <button>Reptiles</button>
       </div>
 
-      {/* Featured Categories */}
       <div className="featured-categories">
         <h2>Featured Categories</h2>
-        <div className="category">
-        <img src={require('../Images/DogFood.png')} alt="Dog Food" />
-          <p>Dog Food</p>
-        </div>
-        <div className="category">
-        <img src={require('../Images/CatFood.png')} alt="Dog Food" />
-          <p>Cat Food</p>
-        </div>
-        <div className="category">
-        <img src={require('../Images/DogAccessories.jpg')} alt="Dog Food" />
-          <p>Dog Accessories</p>
-        </div>
-        <div className="category">
-        <img src={require('../Images/CatLitter.png')} alt="Dog Food" />
-          <p>Cat Litter</p>
-        </div>
-        <div className="category">
-        <img src={require('../Images/CatAccessories.png')} alt="Dog Food" />
-          <p>Cat Accessories</p>
+        <div className="category-container">
+          <div className="category">
+            <button>
+              <img src={require('../Images/DogFood.png')} alt="Dog Food" />
+            </button>
+            <p>Dog Food</p>
+          </div>
+          <div className="category">
+            <button>
+              <img src={require('../Images/CatFood.png')} alt="Cat Food" />
+            </button>
+            <p>Cat Food</p>
+          </div>
+          <div className="category">
+            <button>
+              <img src={require('../Images/DogAccessories.jpg')} alt="Dog Accessories" />
+            </button>
+            <p>Dog Accessories</p>
+          </div>
+          <div className="category">
+            <button>
+              <img src={require('../Images/CatLitter.png')} alt="Cat Litter" />
+            </button>
+            <p>Cat Litter</p>
+          </div>
+          <div className="category">
+            <button>
+              <img src={require('../Images/CatAccessories.png')} alt="Cat Accessories" />
+            </button>
+            <p>Cat Accessories</p>
+          </div>
         </div>
       </div>
-
+      <div className="most-selled">
+        <h2>Most Selled Products</h2>
+        <div className="most-selled-container">
+          <div className="product">
+            <button>
+              <img src={require('../Images/NoProduct.png')} alt="No product" />
+            </button>
+            <p>There's no products yet</p>
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
 
 export default HomePage;
+
