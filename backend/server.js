@@ -20,6 +20,8 @@ app.get('/', (req, res) => {
     res.end('Welcome to the backend server');
 });
 
-app.listen(7500, function () {
-    console.log("The NODE server is running correctly");
+const port = process.env.PORT || 7500;
+app.listen(port, () => {
+  console.log(`serve at http://localhost:${port}`);
 });
+
