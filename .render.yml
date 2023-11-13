@@ -1,0 +1,8 @@
+services:
+  - name: backend
+    buildCommand: docker-compose build backend
+    startCommand: docker-compose up backend
+
+  - name: frontend
+    buildCommand: docker-compose build frontend
+    startCommand: docker-compose up frontend
